@@ -1,0 +1,19 @@
+import re
+def checkPassword(password):
+
+    if len(password)<8:
+        print("Sifre Yanlis")
+        return False
+    if not re.search("[A-Z]",password):
+        print("Sifre Yanlis")
+        return False
+    if not re.search("[a-z]",password):
+        print("Sifre Yanlis")
+        return False
+    if not re.search("[0-9]",password):
+        print("Sifre Yanlis")
+        return False
+    print("Sifre Dogru")
+    return True
+password=input("Sifre daxil edin:")
+checkPassword(password)
