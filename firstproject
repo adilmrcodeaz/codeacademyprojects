@@ -1,0 +1,46 @@
+#Elimizdeki data
+list ={
+    
+    "Mahmizər Həsənova":{"degree": "IT", "courses":["analytics", "statistics"], "no": 1234},
+    "Mədinə Abdulsəmədova":{"degree": "Business Informatics", "courses":["analytics", "statistics"], "no": 1234},
+    "Adil Rəhimov":{"degree": "Automation", "courses":["analytics"], "no": 1234},
+    "Rafiq Rafiqzadə":{"degree": "Automation", "courses":["analytics"], "no": 1234},
+    "Anar Əhmədov":{"degree": "Data Science", "courses":["analytics"], "no": 1234},
+    "Minəxanım Hacımuradova":{"degree": "Computer Engineering", "courses":["analytics"], "no": 1234},
+    "Riyad Əhmədov":{"degree": "IT", "courses":["analytics"], "no": 1234},
+    "Riyad Əbdürəhimov":{"degree": "IT", "courses":["analytics"], "no": 1234},
+    "Lalə Məmmədli":{"degree": "Artificial Intelligence", "courses":["analytics"], "no": 1234},
+    "İlyas Abbasov":{"degree": "Computer Science", "courses":["analytics"], "no": 1234},
+    "Yusif Ağasalamlı ":{"degree": "Computer Science", "courses":["analytics"], "no": 1234},
+    "Ləman Rəhimli":{"degree": "Maths", "courses":["analytics"], "no": 1234},
+    "Həbibə Məmmədli":{"degree": "Maths", "courses":["analytics"], "no": 1234},
+    "Lala Taghiyeva":{"degree": "Policy Analysis", "courses":["analytics"], "no": 1234},
+    "Niyyət Rzayev":{"degree": "Automation", "courses":["analytics"], "no": 1234}
+}
+
+
+# Kataqoriyalari toplamaq ucun dictionary
+kataqoriya_listleri = {}
+
+# Her bir telebeni uygun kataqoriyaya yerlesdir
+for telebe in list:
+    telebenin_adi = telebe
+    degree = list[telebenin_adi]["degree"]
+    courses = list[telebenin_adi]["courses"]
+    no = list[telebenin_adi]["no"]
+    
+    if degree not in kataqoriya_listleri:
+        kataqoriya_listleri[degree] = []
+    
+    kataqoriya_listleri[degree].append((telebenin_adi, courses, no))
+
+# Neticeleri yazdimaq
+for kataqoriya, telebeler in kataqoriya_listleri.items():
+    print(kataqoriya, "Degree sahibleri:")
+    if not telebeler:
+        print("\tBu kataqoriyada telebe yoxdur.")
+    else:
+        for telebe in telebeler:
+            print("\tno:", telebe[2])
+            print("\t\tAdı:", telebe[0])
+            print("\t\tcourseslar:", ", ".join(telebe[1]))
