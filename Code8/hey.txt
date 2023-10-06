@@ -1,0 +1,5 @@
+http://127.0.0.1:8006/hey/?Math_test=79&Programming_Concepts_test=5&Communication_skills_test=96&Working_per_day=8&Logic_test=10&Gender=%22M%22&
+
+http://127.0.0.1:8006/hey/?Math_test=79&Programming_Concepts_test=5&Communication_skills_test=96&Working_per_day=8&Logic_test=10&Gender=M&Introvert=no&Age=28&Public_speaker=yes&Interested_Type_of_Books=Prayer%20books&In_a_Relationship=no
+
+http://127.0.0.1:8006/hey/?Math_test=79&Programming_Concepts_test=75&Communication_skills_test=96&Working_per_day=7&Logic_test=10&Gender=M&Introvert=no&Age=28&Public_speaker=yes&Interested_Type_of_Books=Prayer books&In_a_Relationship=no

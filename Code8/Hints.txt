@@ -1,0 +1,18 @@
+data imbalance di 
+datada null valuelar var
+
+1) statistik analiz aparin 
+2) EDA 
+3) Feature engineering (burda Fastapide buna uygun funksiya yazmaqda lazimdi birinciz bunu edende gireri funksiyasin yazsin)
+4) Modeling
+5) Fastapi ve uvicorn 
+Fastapide global islemesi ucun 127.0.0.1 deyilde (sonda 0.0.0.0 edersiz amma sonda localda isledin sonra)
+siz bunlari etdikden sonra Fastapi file i , pickle larla bir yerde backend e otureceksiz , is Azurla edilecek bu artiq backin isidi 
+bu fayllari backe yollamalisiz SCP ilede olar(mueliin serverine yoladigimiz kimi ) yada githuba yukleyib deyersiz ordan clone ele 
+
+
+Problem multiklasdi 
+2 yol var 1 bir nece model qurulur  (zaman elementini nezere alin ) , 
+yada 1 modelnen edirsiz ve modelde targeti 1,2,3(0,1,2)  kimi verirsiz 
+siz Fastapi ile returnunuz probabilty olacaq yeni dictionary kimi dusunun 'Class1':0.40,'Class2':0.20 , 'Class3':0.2 kimi
+Cixis 10 deq , 5 deq sual cavab calisin ozunuz cixis edin 
